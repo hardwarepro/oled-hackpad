@@ -89,15 +89,15 @@
 	(net 9 "unconnected-(U1-GPIO7{slash}SCL-Pad6)")
 	(net 10 "+5V")
 	(net 11 "unconnected-(U1-GPIO28{slash}ADC2{slash}A2-Pad3)")
-	(net 12 "unconnected-(U1-GPIO26{slash}ADC0{slash}A0-Pad1)")
-	(net 13 "unconnected-(U1-GPIO0{slash}TX-Pad7)")
-	(net 14 "unconnected-(U1-GPIO27{slash}ADC1{slash}A1-Pad2)")
-	(net 15 "unconnected-(U1-3V3-Pad12)")
-	(net 16 "unconnected-(U1-GPIO29{slash}ADC3{slash}A3-Pad4)")
+	(net 12 "unconnected-(U1-GPIO0{slash}TX-Pad7)")
+	(net 13 "unconnected-(U1-3V3-Pad12)")
+	(net 14 "unconnected-(U1-GPIO29{slash}ADC3{slash}A3-Pad4)")
+	(net 15 "Net-(U1-GPIO26{slash}ADC0{slash}A0)")
+	(net 16 "Net-(U1-GPIO27{slash}ADC1{slash}A1)")
 	(footprint "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
 		(layer "F.Cu")
 		(uuid "124f67c8-ef90-40e8-ab89-8c95311c7962")
-		(at 122.234 90.0355)
+		(at 175.425059 91.99375)
 		(descr "3.5mm x 3.5mm PLCC4 Addressable RGB LED NeoPixel, https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf")
 		(tags "LED RGB NeoPixel Mini PLCC-4 3535")
 		(property "Reference" "D2"
@@ -376,10 +376,392 @@
 			)
 		)
 	)
+	(footprint "ec11:RotaryEncoder_Alps_EC12E_Vertical_H20mm"
+		(layer "F.Cu")
+		(uuid "2a33632a-1693-44a5-8873-ac500528a95a")
+		(at 163.893753 77.625)
+		(descr "Alps rotary encoder, EC12E..., vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC12E/EC12E1240405.html")
+		(tags "rotary encoder")
+		(property "Reference" "SW5"
+			(at 2.8 -4.7 0)
+			(layer "F.SilkS")
+			(uuid "8594d530-b4e4-4a20-be1c-ba07c95a0f1e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "RotaryEncoder_Switch"
+			(at 7.5 10.4 0)
+			(layer "F.Fab")
+			(uuid "70897ddc-e8e7-4856-9432-74ce1ba8f70a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2dbe2c6c-9b23-4a3e-bbae-1adbcbc5298a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "987816d0-10c4-4a69-bb66-6f91a6053380")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "RotaryEncoder*")
+		(path "/c9b3229c-b492-4879-8069-21e2a88ee2f6")
+		(sheetname "/")
+		(sheetfile "kicad5.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -0.3 -1.6)
+			(end 0.3 -1.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7853af91-fa23-4444-97b4-d2fac51faf27")
+		)
+		(fp_line
+			(start 0 -1.3)
+			(end -0.3 -1.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "50f323a5-f776-4d35-a9f1-546acd05d4f5")
+		)
+		(fp_line
+			(start 0.3 -1.6)
+			(end 0 -1.3)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "fb23bb4d-7978-4a07-90cc-ffe0593b9a3e")
+		)
+		(fp_line
+			(start 0.8 -3.8)
+			(end 0.8 -1.3)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "674c8c8b-791e-4b54-af14-162da4d70bec")
+		)
+		(fp_line
+			(start 0.8 8.8)
+			(end 0.8 6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "85905c61-948d-4e87-91fd-bade68a69299")
+		)
+		(fp_line
+			(start 5.6 -3.8)
+			(end 0.8 -3.8)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b3d795bc-3427-4631-b496-31d882fb8507")
+		)
+		(fp_line
+			(start 5.7 8.8)
+			(end 0.8 8.8)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "27dc0bea-6910-498b-8654-6c8c179f3c9d")
+		)
+		(fp_line
+			(start 7 2.5)
+			(end 8 2.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "fd52e541-6fa7-429a-9a6a-2feb15053b29")
+		)
+		(fp_line
+			(start 7.5 2)
+			(end 7.5 3)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "0a18c971-6468-4364-92c9-ecb9a175a32d")
+		)
+		(fp_line
+			(start 9.3 -3.8)
+			(end 14.2 -3.8)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "673a941d-8a68-4461-8d76-0ef25b999f00")
+		)
+		(fp_line
+			(start 14.2 -3.8)
+			(end 14.2 8.8)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "94763a14-98e0-4d44-93de-4fad740d76a1")
+		)
+		(fp_line
+			(start 14.2 8.8)
+			(end 9.3 8.8)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "50d9a218-b456-4d3d-ad98-cb2570a455cf")
+		)
+		(fp_circle
+			(center 7.5 2.5)
+			(end 10.5 2.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "815050e9-d1e9-4ab8-83ed-e8794267291c")
+		)
+		(fp_line
+			(start -1.25 -4.6)
+			(end -1.25 9.6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "92ea1471-1da7-4d66-8d11-c445891675b0")
+		)
+		(fp_line
+			(start -1.25 -4.6)
+			(end 14.35 -4.6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "5fb49565-6750-4f87-8213-345f47d84e18")
+		)
+		(fp_line
+			(start 14.35 9.6)
+			(end -1.25 9.6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "cfa6d42d-0619-4fc4-b1ad-30e832d5f4d4")
+		)
+		(fp_line
+			(start 14.35 9.6)
+			(end 14.35 -4.6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "2d5f191e-16e6-4566-b436-5ae6416c375b")
+		)
+		(fp_line
+			(start 0.9 -2.6)
+			(end 1.9 -3.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "9c97570b-2670-46a1-8a4b-5c2d2dc9eaa6")
+		)
+		(fp_line
+			(start 0.9 8.7)
+			(end 0.9 -2.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "83d4e63f-80c5-4724-9553-2b568408c308")
+		)
+		(fp_line
+			(start 1.9 -3.7)
+			(end 14.1 -3.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d0d4cd04-1f2b-4e5b-b692-01065aac0c49")
+		)
+		(fp_line
+			(start 4.5 2.5)
+			(end 10.5 2.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "80a74efa-7753-412f-a93a-0dafa5365c00")
+		)
+		(fp_line
+			(start 7.5 -0.5)
+			(end 7.5 5.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "9a4058ac-448a-4254-b507-5b41a02a7081")
+		)
+		(fp_line
+			(start 14.1 -3.7)
+			(end 14.1 8.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "cfdedd00-9adb-4d56-bc56-1448b36285aa")
+		)
+		(fp_line
+			(start 14.1 8.7)
+			(end 0.9 8.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "1e2e92c0-3c67-432d-9f81-fcb6e0c2b14a")
+		)
+		(fp_circle
+			(center 7.5 2.5)
+			(end 10.5 2.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "633dcac5-4b08-4444-a123-89279403fcdb")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 11.5 6.6 0)
+			(layer "F.Fab")
+			(uuid "67394e3d-80b7-4219-839d-4acc6eb84c34")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "A" thru_hole rect
+			(at 0 0)
+			(size 2 2)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 15 "Net-(U1-GPIO26{slash}ADC0{slash}A0)")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "d89314b5-431b-4e91-bf06-34b1f9b2de79")
+		)
+		(pad "B" thru_hole circle
+			(at 0 5)
+			(size 2 2)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 16 "Net-(U1-GPIO27{slash}ADC1{slash}A1)")
+			(pinfunction "B")
+			(pintype "passive")
+			(uuid "fa294098-4e54-493f-ab60-e5b9d31d5d4a")
+		)
+		(pad "C" thru_hole circle
+			(at 0 2.5)
+			(size 2 2)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 1 "GND")
+			(pinfunction "C")
+			(pintype "passive")
+			(uuid "64c95ac4-10aa-4624-95df-b7a6538b01d8")
+		)
+		(pad "MP" thru_hole rect
+			(at 7.5 -3.1)
+			(size 3 2.5)
+			(drill oval 2.5 2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "712bab20-71d6-4fdd-9c05-74f21076b392")
+		)
+		(pad "MP" thru_hole rect
+			(at 7.5 8.1)
+			(size 3 2.5)
+			(drill oval 2.5 2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "712bab20-71d6-4fdd-9c05-74f21076b392")
+		)
+		(embedded_fonts no)
+		(model "${KISYS3DMOD}/Rotary_Encoder.3dshapes/RotaryEncoder_Alps_EC12E_Vertical_H20mm.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "hackpad:XIAO-RP2040-DIP"
 		(layer "F.Cu")
 		(uuid "3ac21547-a3e1-4c50-b4ba-668cef4a58d0")
-		(at 129.045 71.38)
+		(at 150.667065 81.895838)
 		(property "Reference" "U1"
 			(at -8.5 -12 0)
 			(unlocked yes)
@@ -640,7 +1022,7 @@
 			(size 2.432 1.524)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.1)
-			(net 12 "unconnected-(U1-GPIO26{slash}ADC0{slash}A0-Pad1)")
+			(net 15 "Net-(U1-GPIO26{slash}ADC0{slash}A0)")
 			(pinfunction "GPIO26/ADC0/A0")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
@@ -652,7 +1034,7 @@
 			(drill 0.889)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 12 "unconnected-(U1-GPIO26{slash}ADC0{slash}A0-Pad1)")
+			(net 15 "Net-(U1-GPIO26{slash}ADC0{slash}A0)")
 			(pinfunction "GPIO26/ADC0/A0")
 			(pintype "passive")
 			(uuid "fcafbdea-221a-40ec-a97d-919f6dfe63b2")
@@ -662,7 +1044,7 @@
 			(size 2.432 1.524)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.1)
-			(net 14 "unconnected-(U1-GPIO27{slash}ADC1{slash}A1-Pad2)")
+			(net 16 "Net-(U1-GPIO27{slash}ADC1{slash}A1)")
 			(pinfunction "GPIO27/ADC1/A1")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
@@ -674,7 +1056,7 @@
 			(drill 0.889)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 14 "unconnected-(U1-GPIO27{slash}ADC1{slash}A1-Pad2)")
+			(net 16 "Net-(U1-GPIO27{slash}ADC1{slash}A1)")
 			(pinfunction "GPIO27/ADC1/A1")
 			(pintype "passive")
 			(uuid "253f1f0c-a69a-4a59-a052-928f79d00efb")
@@ -706,7 +1088,7 @@
 			(size 2.432 1.524)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.1)
-			(net 16 "unconnected-(U1-GPIO29{slash}ADC3{slash}A3-Pad4)")
+			(net 14 "unconnected-(U1-GPIO29{slash}ADC3{slash}A3-Pad4)")
 			(pinfunction "GPIO29/ADC3/A3")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
@@ -718,7 +1100,7 @@
 			(drill 0.889)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 16 "unconnected-(U1-GPIO29{slash}ADC3{slash}A3-Pad4)")
+			(net 14 "unconnected-(U1-GPIO29{slash}ADC3{slash}A3-Pad4)")
 			(pinfunction "GPIO29/ADC3/A3")
 			(pintype "passive")
 			(uuid "bce8e31b-7202-4834-978a-f98e807bbb3d")
@@ -772,7 +1154,7 @@
 			(size 2.432 1.524)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.1)
-			(net 13 "unconnected-(U1-GPIO0{slash}TX-Pad7)")
+			(net 12 "unconnected-(U1-GPIO0{slash}TX-Pad7)")
 			(pinfunction "GPIO0/TX")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
@@ -784,7 +1166,7 @@
 			(drill 0.889)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 13 "unconnected-(U1-GPIO0{slash}TX-Pad7)")
+			(net 12 "unconnected-(U1-GPIO0{slash}TX-Pad7)")
 			(pinfunction "GPIO0/TX")
 			(pintype "passive")
 			(uuid "a3e054fc-e421-4e2e-8a7b-f3a32de29216")
@@ -883,7 +1265,7 @@
 			(drill 0.889)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 15 "unconnected-(U1-3V3-Pad12)")
+			(net 13 "unconnected-(U1-3V3-Pad12)")
 			(pinfunction "3V3")
 			(pintype "passive")
 			(uuid "ebcda749-d9fc-4160-b983-97f8f91bb7a1")
@@ -893,7 +1275,7 @@
 			(size 2.432 1.524)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.1)
-			(net 15 "unconnected-(U1-3V3-Pad12)")
+			(net 13 "unconnected-(U1-3V3-Pad12)")
 			(pinfunction "3V3")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
@@ -1007,7 +1389,7 @@
 	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "593e0988-c169-4dc9-b26c-87a6e5ec8308")
-		(at 113.869 91.5105)
+		(at 171.29125 97.31375)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW3"
@@ -1292,7 +1674,7 @@
 	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "629d6796-5524-470d-b53b-638cb0bd6e2f")
-		(at 113.869 76.4205)
+		(at 152.234806 116.38678)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW2"
@@ -1577,11 +1959,11 @@
 	(footprint "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
 		(layer "F.Cu")
 		(uuid "95dbdca0-3ce9-4eb1-97b6-959fba7f44f3")
-		(at 122.234 84.9155)
+		(at 159.059636 111.854454 -90)
 		(descr "3.5mm x 3.5mm PLCC4 Addressable RGB LED NeoPixel, https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf")
 		(tags "LED RGB NeoPixel Mini PLCC-4 3535")
 		(property "Reference" "D1"
-			(at 0 -2.75 0)
+			(at 0 -2.75 90)
 			(layer "F.SilkS")
 			(uuid "684c134f-91c1-4ae1-96d6-57346f9b5640")
 			(effects
@@ -1592,7 +1974,7 @@
 			)
 		)
 		(property "Value" "SK6812MINI"
-			(at 0 3.25 0)
+			(at 0 3.25 90)
 			(layer "F.Fab")
 			(uuid "78eb009e-80ed-4350-ba4a-3af18b88a249")
 			(effects
@@ -1603,7 +1985,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1616,7 +1998,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1633,26 +2015,6 @@
 		(sheetname "/")
 		(sheetfile "kicad5.kicad_sch")
 		(attr smd)
-		(fp_line
-			(start -2.8 -2)
-			(end -2.8 2)
-			(stroke
-				(width 0.12)
-				(type default)
-			)
-			(layer "F.SilkS")
-			(uuid "efc4ffb2-7ccb-4a6a-9eb2-8890ec7d82ec")
-		)
-		(fp_line
-			(start -2.8 -2)
-			(end 2.8 -2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "d139337e-60f8-46ff-a9bf-f105faeb6a01")
-		)
 		(fp_line
 			(start -2.8 2)
 			(end 2.2 2)
@@ -1687,11 +2049,21 @@
 			(start -2.8 -2)
 			(end -2.8 2)
 			(stroke
-				(width 0.05)
+				(width 0.12)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "efc4ffb2-7ccb-4a6a-9eb2-8890ec7d82ec")
+		)
+		(fp_line
+			(start -2.8 -2)
+			(end 2.8 -2)
+			(stroke
+				(width 0.12)
 				(type solid)
 			)
-			(layer "F.CrtYd")
-			(uuid "a669797f-e2f7-4ca1-9396-3bdc93cd688d")
+			(layer "F.SilkS")
+			(uuid "d139337e-60f8-46ff-a9bf-f105faeb6a01")
 		)
 		(fp_line
 			(start -2.8 2)
@@ -1704,16 +2076,6 @@
 			(uuid "4ae46b87-2919-4928-a046-c4d90b8160b2")
 		)
 		(fp_line
-			(start 2.8 -2)
-			(end -2.8 -2)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "22c15b66-7061-48a9-b7da-1fb76cdcec0c")
-		)
-		(fp_line
 			(start 2.8 2)
 			(end 2.8 -2)
 			(stroke
@@ -1724,14 +2086,24 @@
 			(uuid "f93d8cd7-8e41-47f2-80a9-cd7207918a74")
 		)
 		(fp_line
-			(start -1.75 -1.75)
-			(end -1.75 1.75)
+			(start -2.8 -2)
+			(end -2.8 2)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "97c6f6d5-93ea-42fe-ba63-048d0d615b7a")
+			(layer "F.CrtYd")
+			(uuid "a669797f-e2f7-4ca1-9396-3bdc93cd688d")
+		)
+		(fp_line
+			(start 2.8 -2)
+			(end -2.8 -2)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "22c15b66-7061-48a9-b7da-1fb76cdcec0c")
 		)
 		(fp_line
 			(start -1.75 1.75)
@@ -1744,14 +2116,14 @@
 			(uuid "c4d12472-0455-4857-860f-482bac1229fe")
 		)
 		(fp_line
-			(start 1.75 -1.75)
-			(end -1.75 -1.75)
+			(start 1.75 1.75)
+			(end 1.75 -1.75)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "ed531b0c-5fc7-4baf-9ffd-06f32de2f455")
+			(uuid "a9baebfd-1d15-4750-9eaf-1bc6e94a6f74")
 		)
 		(fp_line
 			(start 1.75 0.75)
@@ -1764,14 +2136,24 @@
 			(uuid "6d0a4ea9-4769-41e5-bee5-8009b53af72c")
 		)
 		(fp_line
-			(start 1.75 1.75)
-			(end 1.75 -1.75)
+			(start -1.75 -1.75)
+			(end -1.75 1.75)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "a9baebfd-1d15-4750-9eaf-1bc6e94a6f74")
+			(uuid "97c6f6d5-93ea-42fe-ba63-048d0d615b7a")
+		)
+		(fp_line
+			(start 1.75 -1.75)
+			(end -1.75 -1.75)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ed531b0c-5fc7-4baf-9ffd-06f32de2f455")
 		)
 		(fp_circle
 			(center 0 0)
@@ -1785,7 +2167,7 @@
 			(uuid "a96827d2-67bf-4208-8c4a-5672d0f56a1d")
 		)
 		(fp_text user "1"
-			(at -3.2 -0.875 0)
+			(at -3.2 -0.875 270)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "72a562c4-f8db-4cd5-8b4a-f94a78ee3904")
@@ -1797,7 +2179,7 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "03c8d92d-8250-4db8-831c-1969a685e138")
 			(effects
@@ -1808,7 +2190,7 @@
 			)
 		)
 		(pad "1" smd rect
-			(at -1.75 -0.875)
+			(at -1.75 -0.875 270)
 			(size 1.6 0.85)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "Net-(D1-DOUT)")
@@ -1817,7 +2199,7 @@
 			(uuid "032035cd-09de-4f92-802d-3b7d6d86beff")
 		)
 		(pad "2" smd rect
-			(at -1.75 0.875)
+			(at -1.75 0.875 270)
 			(size 1.6 0.85)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "GND")
@@ -1826,7 +2208,7 @@
 			(uuid "fd71e159-3d55-4d78-a9dd-32f110b79926")
 		)
 		(pad "3" smd rect
-			(at 1.75 0.875)
+			(at 1.75 0.875 270)
 			(size 1.6 0.85)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 3 "Net-(D1-DIN)")
@@ -1835,7 +2217,7 @@
 			(uuid "2dea2eb0-d6af-430a-ba80-b878f3930ce2")
 		)
 		(pad "4" smd rect
-			(at 1.75 -0.875)
+			(at 1.75 -0.875 270)
 			(size 1.6 0.85)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "GND")
@@ -1859,7 +2241,7 @@
 	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "d7904cfd-25f2-4cc7-ab73-c0d172f69a63")
-		(at 113.869 61.3305)
+		(at 171.278513 116.368532)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW1"
@@ -2144,7 +2526,7 @@
 	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 		(layer "F.Cu")
 		(uuid "ee93723a-bd06-43c6-b710-3fb953d76e06")
-		(at 113.869 106.6005)
+		(at 152.24125 97.31375)
 		(descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
 		(tags "Cherry MX keyswitch 1.00u PCB")
 		(property "Reference" "SW4"
@@ -2425,6 +2807,17 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(gr_rect
+		(start 138.1125 71.4375)
+		(end 180.975 130.96875)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "5ed2201c-146d-4a67-a446-f402ceaeeec4")
 	)
 	(embedded_fonts no)
 )
