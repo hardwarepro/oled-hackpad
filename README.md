@@ -1,3 +1,4 @@
+
 ##  A's Hackpad
 
 ### Description
@@ -7,6 +8,20 @@ This is a custom macropad that has 4 buttons and is controlled by a XIAO RP2040 
 ### Firmware
 
 This custom macropad’s firmware was written in KMK, which is easy to be changed and very easy to flash to the XIAO RP2040
+
+### BOM
+
+|Through-hole XIAO-RP2040  |x1  |
+|--|--|
+|SK6812MINI LED's | x2 |
+|EC11 Rotary Encoder| x1 |
+|M3x16mm screws|--|
+|Blank DSA keycaps  |x4  |
+|MX switches  | x4 |
+|||
+
+
+
 
 #### Photos
 
